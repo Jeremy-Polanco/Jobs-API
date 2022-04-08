@@ -1,7 +1,3 @@
-# Jobs-API
-This is a Job API with register/login functionalities, and It's a CRUD of Jobs
-<!-- Please update value in the {}  -->
-
 <h1 align="center">{Job API}</h1>
 
 <div align="center">
