@@ -31,7 +31,7 @@ This is a Job API with register/login functionalities, and It's a CRUD of Jobs
 
 ## Overview
 
-![screenshot](https://imgur.com/a/ZPAw5d1)
+![screenshot](https://i.postimg.cc/TwvNTM4d/image.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
