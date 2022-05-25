@@ -1,69 +1,88 @@
-#### Setup
+<h1 align="center">{Job API}</h1>
+
+<div align="center">
+  <h3>
+    <a href="https://jobs-api-jeremy.herokuapp.com/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/Jeremy-Polanco/Jobs-API">
+      Solution
+    </a>
+  </h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+<!-- OVERVIEW -->
+
+## Overview
+
+![screenshot](https://i.postimg.cc/TwvNTM4d/image.png)
+
+Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+
+- Where can I see your demo?
+  You can find the demo at https://jobs-api-jeremy.herokuapp.com/.
+- What was your experience?
+  This proyect is perfect to practice Authorization, jwstokens, connecting to DB and Node.js
+- What have you learned/improved?
+  I improved my knowledge about building API's and how to deploy an API
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- [Node.js](https://reactjs.org/)
+- [Express](https://vitejs.dev/)
+- [MongoDB](https://www.mongodb.com/)
+
+## Features
+
+[x] User story: I can register or signup
+[x] User story: I can login
+[x] User story: I can create jobs
+[x] User story: I can see all my jobs created
+[x] User story: I can see a single job
+[x] User story: I can update a job
+[x] User story: I can delete a job
+
+## How To Use
+
+<!-- Example: -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) also you will also need to set up a .env file where you can add the json web token, the connection to an MongoDB and JWT expires option.
+
+From your command line:
 
 ```bash
-npm install && npm start
+# Clone this repository
+$ git clone https://github.com/Jeremy-Polanco/Jobs-API
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
 ```
 
-#### Database Connection
+## Acknowledgements
 
-1. Import connect.js
-2. Invoke in start()
-3. Setup .env in the root
-4. Add MONGO_URI with correct value
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-#### Routers
+- [Node.js](https://nodejs.org/)
+- [NodeJs and express course](https://www.johnsmilga.com/)
+- [modzilla](https://developer.mozilla.org/es)
 
-- auth.js
-- jobs.js
+## Contact
 
-#### User Model
-
-Email Validation Regex
-
-```regex
-/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-```
-
-#### Register User
-
-- Validate - name, email, password - with Mongoose
-- Hash Password (with bcryptjs)
-- Save User
-- Generate Token
-- Send Response with Token
-
-#### Login User
-
-- Validate - email, password - in controller
-- If email or password is missing, throw BadRequestError
-- Find User
-- Compare Passwords
-- If no user or password does not match, throw UnauthenticatedError
-- If correct, generate Token
-- Send Response with Token
-
-#### Mongoose Errors
-
-- Validation Errors
-- Duplicate (Email)
-- Cast Error
-
-#### Security
-
-- helmet
-- cors
-- xss-clean
-- express-rate-limit
-
-Swagger UI
-
-```yaml
-/jobs/{id}:
-  parameters:
-    - in: path
-      name: id
-      schema:
-        type: string
-      required: true
-      description: the job id
-```
+- GitHub [@jeremy-polanco](https://{github.com/Jeremy-Polanco})
