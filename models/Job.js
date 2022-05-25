@@ -1,15 +1,14 @@
 const mongoose = require("mongoose");
-
-const jobSchema = new mongoose.Schema(
+const JobSchema = new mongoose.Schema(
   {
     company: {
       type: String,
-      required: [true, "Please provide the company name"],
+      required: [true, "Please provide company name"],
       maxlength: 50,
     },
     position: {
       type: String,
-      required: [true, "Please provide the position"],
+      required: [true, "Please provide position"],
       maxlength: 100,
     },
     status: {
@@ -26,4 +25,4 @@ const jobSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("job", jobSchema);
+module.exports = mongoose.model("Job", JobSchema);
