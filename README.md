@@ -1,4 +1,4 @@
-<h1 align="center">{Job API}</h1>
+<h1 align="center">Job API</h1>
 
 <div align="center">
   <h3>
