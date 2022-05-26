@@ -60,7 +60,7 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) also you will also need to set up a .env file where you can add the json web token, the connection to an MongoDB and JWT expires option.
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) also you will also need to set up a .env file where you can add the json web token, the connection to MongoDB and JWT expires option.
 
 From your command line:
 
